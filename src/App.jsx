@@ -8,13 +8,23 @@ import React from 'react';
 // React.useState(...)
 
 // don't change the Component name "App"
+
+
 export default function App() {
+  const [selectedProceed, setSelectedProceed] = React.useState();
+    //button click function
+    const handleProceed = (selectedButton) => {
+      setSelectedProceed(selectedButton)
+      console.log("selectedButton");
+      
+    }
+  
     return (
       <div>
         <div data-testid="alert" id="alert">
           <h2>Are you sure?</h2>
           <p>These changes can't be reverted!</p>
-          <button>Proceed</button>
+          <button onClick={handleProceed}>Proceed</button>
         </div>
         <button>Delete</button>
       </div>    
