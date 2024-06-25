@@ -13,8 +13,8 @@ export const DUMMY_TODOS = [
 export default function App() {
   return (
       <ul>
-          {DUMMY_TODOS.map((text) => (
-              <li>{text}</li>
+          {DUMMY_TODOS.map((item) => (
+              <Todo>{...item}</Todo>
           ))}
       </ul>
   );

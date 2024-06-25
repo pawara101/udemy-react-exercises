@@ -1,7 +1,5 @@
 import React from 'react';
 
-export default function Todo(props) {
-    return (<li>
-        <button>{props}</button>
-    </li>);
+export default function Todo({ children }) {
+    return <li>{children}</li>;
 }
