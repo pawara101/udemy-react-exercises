@@ -11,5 +11,11 @@ export const DUMMY_TODOS = [
 
 // don't change the Component name "App"
 export default function App() {
-  
+  return (
+      <ul>
+          {DUMMY_TODOS.map((text) => (
+              <li>{text}</li>
+          ))}
+      </ul>
+  );
 }
